@@ -35,6 +35,14 @@ int main(){
 	cout << "Masukan berapa Kandidat: ";
 	cin >> numKandidat;
 
+	cout << "\nKandidat yang di terima:\n";
+	for (int i = 0; i < numKandidat; i++) {
+		if (Kandidat[i].nilM, nilB >= 60) {
+			cout << Kandidat[i].name << endl;
+		}
+	}
+
+
 	double nilM, nilB;
 	cout << "Masukan nilai Matematika = ";
 	cin >> nilM;
