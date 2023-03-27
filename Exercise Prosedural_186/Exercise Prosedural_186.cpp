@@ -1,5 +1,14 @@
 #include <iostream>
+#include <string>
+#include <vector>
+
+
 using namespace std;
+
+struct Kandidat {
+	string name;
+	int votes;
+};
 
 double rerata(double a, double b) {
 	return (a + b) / 2;
@@ -20,6 +29,12 @@ string status2(double rata, double nil) {
 }
 
 int main(){
+	vector<Kandidat> Kandidat;
+	int numKandidat;
+
+	cout << "Masukan berapa Kandidat: ";
+	cin >> numKandidat;
+
 	double nilM, nilB;
 	cout << "Masukan nilai Matematika = ";
 	cin >> nilM;
@@ -29,3 +44,4 @@ int main(){
 	cout << "\nStatus kelulusan = " << status2(rerata(nilM, nilB),nilM);
 	return 0;
 }
+
